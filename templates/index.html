@@ -1,0 +1,69 @@
+<DOCTYPE html>
+  <html>
+      <head>
+      <title>Parking Space Counter</title>
+      
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        title { text-align: center}
+          .bar {
+      background-color: rgb(245, 193, 97);
+      width: 100%;
+      height: 40px;
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+    
+    .bar li {
+      height: 100%;
+      width: 100px;
+      border-right: 1px solid rgb(235, 177, 69);
+    }
+    
+    .bar li a {
+      color: black;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    
+    .bar li a:hover {
+      background-color: rgb(235, 177, 69);
+    }
+    
+    .bar li a.active {
+      background-color: rgb(165, 113, 16);
+      color: white;
+    }
+
+  
+  
+
+
+      </style>
+      </head>
+<body>
+  <div class="container">
+      <nav>
+      <ul class="bar">
+        <li><a href="#">Parking Lot</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="active">Support</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      </nav>
+    </div>
+
+
+    
+    
+<h1 style= "text-align:center ; font-family:Trebuchet MS" > Parking Space Available:</h1>
+<img src="{{ url_for('video') }}" width="50%"/>
+</body>
+
+      </html>
